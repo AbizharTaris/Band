@@ -1,0 +1,432 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY band "http://localhost/Band/band.owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://localhost/Band/band.owl#"
+     xml:base="http://localhost/Band/band.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:band="http://localhost/Band/band.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://localhost/Band/band.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/Band/band.owl#has_album -->
+
+    <owl:ObjectProperty rdf:about="&band;has_album"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#has_award -->
+
+    <owl:ObjectProperty rdf:about="&band;has_award"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#has_member -->
+
+    <owl:ObjectProperty rdf:about="&band;has_member"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#has_single -->
+
+    <owl:ObjectProperty rdf:about="&band;has_single"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/Band/band.owl#album_title -->
+
+    <owl:DatatypeProperty rdf:about="&band;album_title"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#band_labels -->
+
+    <owl:DatatypeProperty rdf:about="&band;band_labels"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#band_name -->
+
+    <owl:DatatypeProperty rdf:about="&band;band_name"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#band_position -->
+
+    <owl:DatatypeProperty rdf:about="&band;band_position"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#born_band -->
+
+    <owl:DatatypeProperty rdf:about="&band;born_band"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#creator -->
+
+    <owl:DatatypeProperty rdf:about="&band;creator"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#duration -->
+
+    <owl:DatatypeProperty rdf:about="&band;duration"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#genre_band -->
+
+    <owl:DatatypeProperty rdf:about="&band;genre_band"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#member_age -->
+
+    <owl:DatatypeProperty rdf:about="&band;member_age"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#member_born -->
+
+    <owl:DatatypeProperty rdf:about="&band;member_born"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#member_name -->
+
+    <owl:DatatypeProperty rdf:about="&band;member_name"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#nomination -->
+
+    <owl:DatatypeProperty rdf:about="&band;nomination"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#organizer -->
+
+    <owl:DatatypeProperty rdf:about="&band;organizer"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#origin_band -->
+
+    <owl:DatatypeProperty rdf:about="&band;origin_band"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#title -->
+
+    <owl:DatatypeProperty rdf:about="&band;title"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#websites -->
+
+    <owl:DatatypeProperty rdf:about="&band;websites"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#year_active -->
+
+    <owl:DatatypeProperty rdf:about="&band;year_active"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#year_award -->
+
+    <owl:DatatypeProperty rdf:about="&band;year_award"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#year_release -->
+
+    <owl:DatatypeProperty rdf:about="&band;year_release"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/Band/band.owl#album -->
+
+    <owl:Class rdf:about="&band;album"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#award -->
+
+    <owl:Class rdf:about="&band;award"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#band -->
+
+    <owl:Class rdf:about="&band;band"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#member -->
+
+    <owl:Class rdf:about="&band;member"/>
+    
+
+
+    <!-- http://localhost/Band/band.owl#single -->
+
+    <owl:Class rdf:about="&band;single"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/Band/band.owl#album_dewa1 -->
+
+    <owl:NamedIndividual rdf:about="&band;album_dewa1">
+        <rdf:type rdf:resource="&band;album"/>
+        <year_release rdf:datatype="&xsd;integer">2000</year_release>
+        <album_title>Kangen</album_title>
+        <has_single rdf:resource="&band;single_dewa1"/>
+        <has_single rdf:resource="&band;single_dewa2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/Band/band.owl#album_slank1 -->
+
+    <owl:NamedIndividual rdf:about="&band;album_slank1">
+        <rdf:type rdf:resource="&band;album"/>
+        <year_release rdf:datatype="&xsd;integer">1998</year_release>
+        <album_title>Munafik</album_title>
+        <has_single rdf:resource="&band;single_slank1"/>
+        <has_single rdf:resource="&band;single_slank2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/Band/band.owl#ari_lasso -->
+
+    <owl:NamedIndividual rdf:about="&band;ari_lasso">
+        <rdf:type rdf:resource="&band;member"/>
+        <member_age rdf:datatype="&xsd;integer">40</member_age>
+        <band_position>Vocalist</band_position>
+        <member_name>Ari Lasso</member_name>
+        <member_born>Surabaya 10 Januari 1980</member_born>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/Band/band.owl#award_dewa1 -->
+
+    <owl:NamedIndividual rdf:about="&band;award_dewa1">
+        <rdf:type rdf:resource="&band;award"/>
+        <year_award rdf:datatype="&xsd;integer">2017</year_award>
+        <nomination>Band Rock Terbaik</nomination>
+        <organizer>Ami Award Indonesia</organizer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/Band/band.owl#award_slank1 -->
+
+    <owl:NamedIndividual rdf:about="&band;award_slank1">
+        <rdf:type rdf:resource="&band;award"/>
+        <year_award rdf:datatype="&xsd;integer">2018</year_award>
+        <nomination>Band Rock Terbaik</nomination>
+        <organizer>Ami Award Indonesia</organizer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/Band/band.owl#bimbim -->
+
+    <owl:NamedIndividual rdf:about="&band;bimbim">
+        <rdf:type rdf:resource="&band;member"/>
+        <member_age rdf:datatype="&xsd;integer">43</member_age>
+        <band_position>Guitaris</band_position>
+        <member_born>Jakarta 19 April 1980</member_born>
+        <member_name>Bim Bim</member_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/Band/band.owl#dewa_19 -->
+
+    <owl:NamedIndividual rdf:about="&band;dewa_19">
+        <rdf:type rdf:resource="&band;band"/>
+        <origin_band>Surabaya</origin_band>
+        <band_labels>NAGASWARA Records</band_labels>
+        <genre_band>Rock Alternatives</genre_band>
+        <born_band>22 Juli 1996</born_band>
+        <year_active>1996-now</year_active>
+        <websites>www.dewa19.com</websites>
+        <band_name>Dewa 19</band_name>
+        <has_album rdf:resource="&band;album_dewa1"/>
+        <has_member rdf:resource="&band;ari_lasso"/>
+        <has_award rdf:resource="&band;award_dewa1"/>
+        <has_member rdf:resource="&band;dhani"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/Band/band.owl#dhani -->
+
+    <owl:NamedIndividual rdf:about="&band;dhani">
+        <rdf:type rdf:resource="&band;member"/>
+        <member_age rdf:datatype="&xsd;integer">47</member_age>
+        <member_name>Ahmad Dhani</member_name>
+        <band_position>Pianist</band_position>
+        <member_born>Surabaya 30 Desember 1970</member_born>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/Band/band.owl#kaka -->
+
+    <owl:NamedIndividual rdf:about="&band;kaka">
+        <rdf:type rdf:resource="&band;member"/>
+        <member_age rdf:datatype="&xsd;integer">45</member_age>
+        <member_born>Jakarta 20 Agustus 1986</member_born>
+        <band_position>Vocalist</band_position>
+        <member_name>Kaka</member_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/Band/band.owl#single_dewa1 -->
+
+    <owl:NamedIndividual rdf:about="&band;single_dewa1">
+        <rdf:type rdf:resource="&band;single"/>
+        <creator>Ahmad Dhani</creator>
+        <title>Maha Dewi</title>
+        <duration>3.11 Minutes</duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/Band/band.owl#single_dewa2 -->
+
+    <owl:NamedIndividual rdf:about="&band;single_dewa2">
+        <rdf:type rdf:resource="&band;single"/>
+        <title>Pupus</title>
+        <creator>Ahmad Dhani</creator>
+        <duration>4. 69 Minutes</duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/Band/band.owl#single_slank1 -->
+
+    <owl:NamedIndividual rdf:about="&band;single_slank1">
+        <rdf:type rdf:resource="&band;single"/>
+        <creator>Kaka</creator>
+        <duration>5.20 Minutes</duration>
+        <title>Kampungan</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/Band/band.owl#single_slank2 -->
+
+    <owl:NamedIndividual rdf:about="&band;single_slank2">
+        <rdf:type rdf:resource="&band;single"/>
+        <title>Ku Tak Bisa</title>
+        <duration>4.40 Minutes</duration>
+        <creator>Bim Bim</creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/Band/band.owl#slank -->
+
+    <owl:NamedIndividual rdf:about="&band;slank">
+        <rdf:type rdf:resource="&band;band"/>
+        <band_labels>SONY Records</band_labels>
+        <websites>ww.slank.com</websites>
+        <genre_band>Rock</genre_band>
+        <origin_band>Jakarta</origin_band>
+        <year_active>1986-now</year_active>
+        <band_name>Slank</band_name>
+        <born_band>22 Januari 1987</born_band>
+        <has_album rdf:resource="&band;album_slank1"/>
+        <has_award rdf:resource="&band;award_slank1"/>
+        <has_member rdf:resource="&band;bimbim"/>
+        <has_member rdf:resource="&band;kaka"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&band;dewa_19"/>
+            <rdf:Description rdf:about="&band;slank"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
